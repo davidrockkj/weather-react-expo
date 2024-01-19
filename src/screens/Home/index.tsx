@@ -1,5 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, View, Text } from 'react-native';
+import MapPin from 'phosphor-react-native/src/icons/MapPin';
+import CaretDown from "phosphor-react-native/src/icons/CaretDown";
 
 export function Home() {
   return (
@@ -14,7 +16,9 @@ export function Home() {
       <View style={styles.content}>
         <View style={styles.header}>
           <View style={styles.headerLeft}>
+            <MapPin color='#fff' size={32} />
             <Text>Petrolina</Text>
+            <CaretDown color='#fff' size={32} />
           </View>
         </View>
       </View>
