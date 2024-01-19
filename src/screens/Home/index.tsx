@@ -1,11 +1,18 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export function Home() {
   return (
-    <View style={styles.container}>
+    <LinearGradient
+      colors={[
+        "#292A4E",
+        "#715c77",
+        "#C75C2E",
+      ]}
+      style={styles.container}>
       
-    </View>
+    </LinearGradient>
   );
 }
 
