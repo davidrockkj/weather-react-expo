@@ -2,6 +2,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, View, Text } from 'react-native';
 import MapPin from 'phosphor-react-native/src/icons/MapPin';
 import CaretDown from "phosphor-react-native/src/icons/CaretDown";
+import BellRinging from "phosphor-react-native/src/icons/BellRinging";
 
 export function Home() {
   return (
@@ -20,6 +21,7 @@ export function Home() {
             <Text>Petrolina</Text>
             <CaretDown color='#fff' size={32} />
           </View>
+          <BellRinging color='#fff' size={32} />
         </View>
       </View>
 
