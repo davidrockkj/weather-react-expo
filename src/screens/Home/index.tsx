@@ -28,12 +28,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-
+    paddingHorizontal: 35,
+    paddingTop: 40,
   },
   header: {
 
   },
   headerLeft: {
-
+    
   },
 });
