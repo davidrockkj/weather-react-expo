@@ -1,5 +1,5 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 export function Home() {
   return (
@@ -9,8 +9,16 @@ export function Home() {
         "#715c77",
         "#C75C2E",
       ]}
-      style={styles.container}>
-      
+      style={styles.container}
+    >
+      <View style={styles.content}>
+        <View style={styles.header}>
+          <View style={styles.headerLeft}>
+            <Text>Petrolina</Text>
+          </View>
+        </View>
+      </View>
+
     </LinearGradient>
   );
 }
