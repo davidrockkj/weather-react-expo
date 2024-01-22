@@ -4,7 +4,7 @@ import MapPin from 'phosphor-react-native/src/icons/MapPin';
 import CaretDown from "phosphor-react-native/src/icons/CaretDown";
 import BellRinging from "phosphor-react-native/src/icons/BellRinging";
 
-import Sun from '../../assets/01d.svg'
+import Sun from '../../assets/01d.svg';
 
 export function Home() {
   return (
