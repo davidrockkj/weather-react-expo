@@ -17,11 +17,11 @@ export function Home() {
       <View style={styles.content}>
         <View style={styles.header}>
           <View style={styles.headerLeft}>
-            <MapPin color='#fff' size={32} />
-            <Text>Petrolina</Text>
-            <CaretDown color='#fff' size={32} />
+            <MapPin color='#fff' size={25} />
+            <Text style={styles.headerLeftText}>Petrolina</Text>
+            <CaretDown color='#fff' size={25} />
           </View>
-          <BellRinging color='#fff' size={32} />
+          <BellRinging color='#fff' size={25} />
         </View>
       </View>
 
