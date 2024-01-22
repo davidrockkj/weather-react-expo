@@ -32,6 +32,13 @@ export function Home() {
           <Text style={styles.clima}>21°C</Text>
           <Text style={styles.maxMin}>Max.: 31°C | Min.: 25°C</Text>
         </View>
+
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>Previsão para os próximos 7 dias</Text>
+          <View style={styles.footerCard}>
+
+          </View>
+        </View>
       </View>
 
     </LinearGradient>
