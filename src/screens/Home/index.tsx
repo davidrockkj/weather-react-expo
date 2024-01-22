@@ -1,5 +1,5 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 import MapPin from 'phosphor-react-native/src/icons/MapPin';
 import CaretDown from "phosphor-react-native/src/icons/CaretDown";
 import BellRinging from "phosphor-react-native/src/icons/BellRinging";
@@ -36,11 +36,39 @@ export function Home() {
 
         <View style={styles.footer}>
           <Text style={styles.footerText}>Previsão para os próximos 7 dias</Text>
-          <View style={styles.footerCard}>
-            <Text style={styles.footerCardTitle}>Seg</Text>
-            <Sun2 width={40} height={40} />
-            <Text style={styles.footerCardPreview}>19°C</Text>
-          </View>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+
+            <View style={styles.footerCard}>
+              <Text style={styles.footerCardTitle}>Seg</Text>
+              <Sun2 width={40} height={40} />
+              <Text style={styles.footerCardPreview}>19°C</Text>
+            </View>
+
+            <View style={styles.footerCard}>
+              <Text style={styles.footerCardTitle}>Seg</Text>
+              <Sun2 width={40} height={40} />
+              <Text style={styles.footerCardPreview}>19°C</Text>
+            </View>
+
+            <View style={styles.footerCard}>
+              <Text style={styles.footerCardTitle}>Seg</Text>
+              <Sun2 width={40} height={40} />
+              <Text style={styles.footerCardPreview}>19°C</Text>
+            </View>
+
+            <View style={styles.footerCard}>
+              <Text style={styles.footerCardTitle}>Seg</Text>
+              <Sun2 width={40} height={40} />
+              <Text style={styles.footerCardPreview}>19°C</Text>
+            </View>
+
+            <View style={styles.footerCard}>
+              <Text style={styles.footerCardTitle}>Seg</Text>
+              <Sun2 width={40} height={40} />
+              <Text style={styles.footerCardPreview}>19°C</Text>
+            </View>
+
+          </ScrollView>
         </View>
       </View>
 
@@ -110,6 +138,7 @@ const styles = StyleSheet.create({
     height: 129,
     backgroundColor: 'rgba(255, 255, 255, 0.23)',
     borderRadius: 8,
+    marginRight: 14,
   },
   footerCardTitle: {
     fontSize: 16,
