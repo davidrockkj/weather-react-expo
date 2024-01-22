@@ -27,10 +27,10 @@ export function Home() {
         </View>
 
         <View style={styles.info}>
-          <Text>Bom dia, David!</Text>
-          <Sun />
-          <Text>21°C</Text>
-          <Text>Max.: 31°C | Min.: 25°C</Text>
+          <Text style={styles.infoTextUser}>Bom dia, David!</Text>
+          <Sun width={200} height={200} />
+          <Text style={styles.clima}>21°C</Text>
+          <Text style={styles.maxMin}>Max.: 31°C | Min.: 25°C</Text>
         </View>
       </View>
 
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 35,
     paddingTop: 40,
+    alignItems: 'center',
   },
   header: {
     width: "100%",
@@ -60,5 +61,25 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 18,
     fontWeight: "600",
+  },
+  info: {
+    paddingVertical: 70,
+    alignItems: 'center',
+    gap: 10,
+  },
+  infoTextUser: {
+    fontSize: 32,
+    fontWeight: '300',
+    color: '#fff',
+  },
+  clima: {
+    fontSize: 100,
+    fontWeight: '300',
+    color: '#fff',
+  },
+  maxMin: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#fff',
   }
 });
