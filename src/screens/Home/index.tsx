@@ -5,6 +5,7 @@ import CaretDown from "phosphor-react-native/src/icons/CaretDown";
 import BellRinging from "phosphor-react-native/src/icons/BellRinging";
 
 import Sun from '../../assets/01d.svg';
+import Sun2 from '../../assets/02d.svg';
 
 export function Home() {
   return (
@@ -36,7 +37,9 @@ export function Home() {
         <View style={styles.footer}>
           <Text style={styles.footerText}>Previsão para os próximos 7 dias</Text>
           <View style={styles.footerCard}>
-
+            <Text style={styles.footerCardTitle}>Seg</Text>
+            <Sun2 width={40} height={40} />
+            <Text style={styles.footerCardPreview}>19°C</Text>
           </View>
         </View>
       </View>
@@ -88,5 +91,32 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     color: '#fff',
+  },
+  footer: {
+    width: '100%',
+    paddingLeft: 40,
+    gap: 10,
+  },
+  footerText: {
+    fontSize: 20,
+    fontWeight: '300',
+    color: '#fff',
+  },
+  footerCard: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+    width: 99,
+    height: 129,
+    backgroundColor: 'rgba(255, 255, 255, 0.23)',
+    borderRadius: 8,
+  },
+  footerCardTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  footerCardPreview: {
+    fontSize: 24,
+    fontWeight: '300',
   }
 });
