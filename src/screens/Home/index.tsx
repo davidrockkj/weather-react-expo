@@ -4,6 +4,8 @@ import MapPin from 'phosphor-react-native/src/icons/MapPin';
 import CaretDown from "phosphor-react-native/src/icons/CaretDown";
 import BellRinging from "phosphor-react-native/src/icons/BellRinging";
 
+import Sun from '../../assets/01d.svg'
+
 export function Home() {
   return (
     <LinearGradient
@@ -22,6 +24,13 @@ export function Home() {
             <CaretDown color='#fff' size={25} />
           </View>
           <BellRinging color='#fff' size={25} />
+        </View>
+
+        <View style={styles.info}>
+          <Text>Bom dia, David!</Text>
+          <Sun />
+          <Text>21°C</Text>
+          <Text>Max.: 31°C | Min.: 25°C</Text>
         </View>
       </View>
 
